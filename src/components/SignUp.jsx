@@ -2,7 +2,7 @@ import { Button, Label, TextInput } from 'flowbite-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Login() {
+export default function SignUp() {
   return (
     <div className='pt-10 bg-gray-100 min-h-screen'>
         <div className='w-10/12 block md:flex mx-auto gap-6 pt-5 md:pt-14'>
@@ -14,7 +14,7 @@ export default function Login() {
             <p className='pt-4 leading-relaxed'>
                 Welcome to a family that focuses on compassion, support and spiritual naurishment.
                 A family that beleives in God and the achievement of goals through moral, emotional,spiritual and financial support. 
-                Login with your username,email and password and be part of this great family!
+                Signup with your username,email and password and be part of this great family!
             </p>
             </div>
             <div className='flex-1 mt-8 md:mt-0'>
@@ -25,14 +25,14 @@ export default function Login() {
                     <TextInput type='email' placeholder='Your email' id='email'/>
                     <Label value='Password'/>
                     <TextInput type='password' placeholder='******' id='password'/>
-                    <Link to="/membersWall">
+                    <Link to="/Login">
                     <Button gradientDuoTone='purpleToPink' outline className='w-full'>
-                        Login
+                        Signup
                     </Button>
                     </Link>
                 </form>
                     <p className='text-sm pt-4'>
-                        Don't have an account? <a className='text-cyan-800' href='/SignUp'>Create account</a>
+                        Already have an account? <a className='text-cyan-800' href='/Login'>Login</a>
                     </p>
             </div>
         </div>
